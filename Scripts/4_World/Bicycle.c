@@ -8,6 +8,11 @@ class Bicycle_Base : CarScript
         // m_CarHornLongSoundName = "ADD HORN SOUND";
     }
 
+    override CarLightBase CreateFrontLight()
+    {
+        return CarLightBase.Cast(ScriptedLightBase.CreateLight(BicycleFrontLight));
+    }
+
     
     override bool IsVitalTruckBattery()
 	{

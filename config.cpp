@@ -1,6 +1,6 @@
 class CfgPatches
 {
-	class ArmaBicycles
+	class BBC_Bicycles
 	{
 		units[]={};
 		weapons[]={};
@@ -15,9 +15,9 @@ class CfgPatches
 };
 class CfgMods
 {
-	class ArmaBicycles
+	class BBC_Bicycles
 	{
-		dir="BBC_Bicycle";
+		dir="Borocilis-Better-Cars";
 		author="Borocili";
 		version="0.1";
 		extra=0;
@@ -29,7 +29,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"BBC_Bicycle/Scripts/3_Game"
+					"Borocilis-Better-Cars/Scripts/3_Game"
 				};
 			};
 			class worldScriptModule
@@ -37,7 +37,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"BBC_Bicycles/Scripts/4_World"
+					"Borocilis-Better-Cars/Scripts/4_World"
 				};
 			};
 			class missionScriptModule
@@ -45,7 +45,7 @@ class CfgMods
 				value="";
 				files[]=
 				{
-					"BBC_Bicycles/Scripts/5_Mission"
+					"Borocilis-Better-Cars/Scripts/5_Mission"
 				};
 			};
 		};
@@ -117,7 +117,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Bicycle Wheel";
-		model="BBC_Bicycle\model\proxy\bicycle_wheel.p3d";
+		model="Borocilis-Better-Cars\model\proxy\bicycle_wheel.p3d";
 		weight=30000;
 		itemSize[]={6,6};
 		inventorySlot[]=
@@ -142,7 +142,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Bicycle Wheel";
-		model="BBC_Bicycle\model\proxy\mmt_wheel.p3d";
+		model="Borocilis-Better-Cars\model\proxy\mmt_wheel.p3d";
 		weight=30000;
 		itemSize[]={6,6};
 		inventorySlot[]=
@@ -166,7 +166,7 @@ class CfgVehicles
 	class ItemBicycle_Base;
 	class ItemBicycle : ItemBicycle_Base
 	{
-		model="BBC_Bicycle\model\itembicycle.p3d";
+		model="Borocilis-Better-Cars\model\itembicycle.p3d";
 		scope=2;
 		attachments[]=
 		{
@@ -176,7 +176,7 @@ class CfgVehicles
 	};
 	class ItemMMT : ItemBicycle_Base
 	{
-		model="BBC_Bicycle\model\itemmmt.p3d";
+		model="Borocilis-Better-Cars\model\itemmmt.p3d";
 		scope=2;
 		attachments[]=
 		{
@@ -194,7 +194,7 @@ class CfgVehicles
 	class Bicycle : Bicycle_Base
 	{
 		scope=2;
-		model="BBC_Bicycle\model\bicycle.p3d";
+		model="Borocilis-Better-Cars\model\bicycle.p3d";
 		attachments[]=
 		{
 			"bicycle_wheel_1_1",
@@ -561,7 +561,7 @@ class CfgVehicles
 	class MMT : Bicycle
 	{
 		scope=2;
-		model="BBC_Bicycle\model\MMT.p3d";
+		model="Borocilis-Better-Cars\model\MMT.p3d";
 		attachments[]=
 		{
 			"mmt_wheel_1_1",
@@ -737,7 +737,7 @@ class CfgNonAIVehicles
 	class ProxyVehiclePart;
 	class ProxyBicycle_wheel: ProxyVehiclePart
 	{
-		model="BBC_Bicycle\model\proxy\bicycle_wheel.p3d";
+		model="Borocilis-Better-Cars\model\proxy\bicycle_wheel.p3d";
 		inventorySlot[]=
 		{
 			"bicycle_wheel_1_1",
@@ -758,7 +758,7 @@ class CfgNonAIVehicles
 	};
 	class Proxymmt_wheel: ProxyVehiclePart
 	{
-		model="BBC_Bicycle\model\proxy\mmt_wheel.p3d";
+		model="Borocilis-Better-Cars\model\proxy\mmt_wheel.p3d";
 		inventorySlot[]=
 		{
 			"mmt_wheel_1_1",

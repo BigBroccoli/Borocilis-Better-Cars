@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{A556746577AC49E4}Bicycle/anim/MMTbicycleIK.anm"
+ Author "mazlik"
+ ChangeDate -1693142858
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "MMTbicycleIK.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

@@ -1,0 +1,16 @@
+MetaFileClass {
+ Name "{B7A0837B17B6A216}ArmaBicycles/anim/old_bicycleIK.anm"
+ Author "mazlik"
+ ChangeDate -2004553546
+ Configurations {
+  TXAResourceClass PC {
+   SourceFile "old_bicycleIK.txa"
+  }
+  TXAResourceClass XBOX_ONE : PC {
+  }
+  TXAResourceClass PS4 : PC {
+  }
+  TXAResourceClass LINUX : PC {
+  }
+ }
+}

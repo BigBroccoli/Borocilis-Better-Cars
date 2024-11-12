@@ -8,7 +8,7 @@ class CfgPatches
         requiredAddons[] = 
         {
             "DZ_Data",
-            "DZ_Vehicles_Wheels",
+            "DZ_Vehicles_Wheeled",
             "DZ_Vehicles_Parts"
         };
     };
@@ -23,7 +23,7 @@ class CfgMods
         action = "";
         hideName = 1;
         hidePicture = 1;
-        name = "Bicycle";
+        name = "bicycle";
         credits = "Borocili, Mass";
         author = "Borocili";
         authorID = "0";

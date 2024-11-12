@@ -20,7 +20,7 @@ class Stage1
 };
 class Stage2
 {
-    texture = "BBC_Bicycle\data\bicycle_spec.paa";
+    texture = "";
     uvSource = "tex";
     class uvTransform
     {
@@ -44,7 +44,7 @@ class Stage3
 };
 class Stage4
 {
-    texture = "BBC_Bicycle\data\bicycle_as.paa";
+    texture = "";
     uvSource = "tex";
     class uvTransform
     {

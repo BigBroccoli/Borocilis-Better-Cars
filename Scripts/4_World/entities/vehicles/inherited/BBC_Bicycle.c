@@ -7,7 +7,7 @@ class BBC_Bicycle : Bicycle_Base
 	
 	override string GetBicycleItemClassName()
 	{
-		return "BBC_Bicycle";
+		return "ItemBicycle";
 	}
 	
 	override void EEItemAttached(EntityAI item, string slot_name)
@@ -58,7 +58,7 @@ class BBC_Bicycle : Bicycle_Base
 		GetInventory().CreateInInventory( "bicycle_wheel" );
 	}
 };
-class MMTArma : Bicycle_Base
+class MMT : Bicycle_Base
 {
 	override int GetAnimInstance()
 	{

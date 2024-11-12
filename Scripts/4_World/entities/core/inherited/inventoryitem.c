@@ -1,14 +1,14 @@
-class bicycle_wheel extends CarWheel {};
+class Bicycle_wheel extends CarWheel {};
 class MMT_wheel extends CarWheel {};
 class ItemBicycle : ItemBicycle_Base
 {
 	override string GetBicycleClassName()
 	{
-		return "BBC_Bicycle";
+		return "ItemBicycle";
 	}
 
 };
-class ItemMMTArma : ItemBicycle_Base
+class ItemMMT : ItemBicycle_Base
 {
 	override string GetBicycleClassName()
 	{

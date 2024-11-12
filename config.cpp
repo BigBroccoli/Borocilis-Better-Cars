@@ -2,7 +2,14 @@ class CfgPatches
 {
 	class BBC_Bicycles
 	{
-		units[]={};
+		units[]={
+			"Bicycle",
+            "Bicycle_wheel",
+            "MMT", 
+            "MMT_wheel",
+            "ItemBicycle",
+            "ItemMMT"
+		};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
@@ -117,7 +124,7 @@ class CfgVehicles
 	{
 		scope=2;
 		displayName="Bicycle Wheel";
-		model="Borocilis-Better-Cars\model\proxy\bicycle_wheel.p3d";
+		model="Borocilis-Better-Cars\model\proxy\Bicycle_wheel.p3d";
 		weight=30000;
 		itemSize[]={6,6};
 		inventorySlot[]=
@@ -176,7 +183,7 @@ class CfgVehicles
 	};
 	class ItemMMT : ItemBicycle_Base
 	{
-		model="Borocilis-Better-Cars\model\itemmmt.p3d";
+		model="Borocilis-Better-Cars\model\itemMMT.p3d";
 		scope=2;
 		attachments[]=
 		{

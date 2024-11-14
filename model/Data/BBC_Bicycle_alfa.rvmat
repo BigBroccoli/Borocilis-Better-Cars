@@ -9,12 +9,13 @@ VertexShaderID="Super";
 renderFlags[]={"NoTiWrite"};
 class Stage0
 {
-	texture="BBC_Bicycles\model\Data\BBC_Bicycles_alfa_co.paa";
+	texture="Borocilis-Better-Cars\model\Data\BBC_Bicycle_alfa_co.paa";
 	uvSource="tex";
+	TextureFilter=2;
 };
 class Stage1
 {
-	texture="BBC_Bicycles\model\Data\BBC_Bicycles_alfa_nohq.paa";
+	texture="Borocilis-Better-Cars\model\Data\BBC_Bicycle_alfa_nohq.paa";
 	uvSource="tex";
 	class uvTransform
 	{

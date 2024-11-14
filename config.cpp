@@ -2,21 +2,13 @@ class CfgPatches
 {
 	class BBC_Bicycles
 	{
-		units[]={
-			"Bicycle",
-            "Bicycle_wheel",
-            "MMT", 
-            "MMT_wheel",
-            "ItemBicycle",
-            "ItemMMT"
-		};
+		units[]={};
 		weapons[]={};
 		requiredVersion=0.1;
 		requiredAddons[]=
 		{
 			"DZ_Data",
-			"DZ_Scripts",
-			"Bicycle"
+			"DZ_Scripts"
 		};
 	};
 };
@@ -119,12 +111,13 @@ class CfgSlots
 };
 class CfgVehicles
 {
+	class CarScript;
 	class CarWheel;
 	class Bicycle_wheel: CarWheel
 	{
 		scope=2;
 		displayName="Bicycle Wheel";
-		model="Borocilis-Better-Cars\model\proxy\Bicycle_wheel.p3d";
+		model="Borocilis-Better-Cars\model\Proxy\bicycle_wheel.p3d";
 		weight=30000;
 		itemSize[]={6,6};
 		inventorySlot[]=
@@ -148,8 +141,8 @@ class CfgVehicles
 	class MMT_wheel: CarWheel
 	{
 		scope=2;
-		displayName="Bicycle Wheel";
-		model="Borocilis-Better-Cars\model\proxy\mmt_wheel.p3d";
+		displayName="Mountain Bike Wheel";
+		model="Borocilis-Better-Cars\model\Proxy\mmt_wheel.p3d";
 		weight=30000;
 		itemSize[]={6,6};
 		inventorySlot[]=
@@ -170,7 +163,7 @@ class CfgVehicles
 		tyreOffroadResistance=0.81999999;
 		tyreGrip=0.81999999;
 	};
-	class ItemBicycle_Base;
+	class ItemBicycle_Base : CarScript{};
 	class ItemBicycle : ItemBicycle_Base
 	{
 		model="Borocilis-Better-Cars\model\itembicycle.p3d";
@@ -197,7 +190,7 @@ class CfgVehicles
 			allowOwnedCargoManipulation=1;
 		};
 	};
-	class Bicycle_Base;
+	class Bicycle_Base : CarScript{};
 	class Bicycle : Bicycle_Base
 	{
 		scope=2;
@@ -744,7 +737,7 @@ class CfgNonAIVehicles
 	class ProxyVehiclePart;
 	class ProxyBicycle_wheel: ProxyVehiclePart
 	{
-		model="Borocilis-Better-Cars\model\proxy\bicycle_wheel.p3d";
+		model="Borocilis-Better-Cars\model\Proxy\bicycle_wheel.p3d";
 		inventorySlot[]=
 		{
 			"bicycle_wheel_1_1",
@@ -765,7 +758,7 @@ class CfgNonAIVehicles
 	};
 	class Proxymmt_wheel: ProxyVehiclePart
 	{
-		model="Borocilis-Better-Cars\model\proxy\mmt_wheel.p3d";
+		model="Borocilis-Better-Cars\model\Proxy\mmt_wheel.p3d";
 		inventorySlot[]=
 		{
 			"mmt_wheel_1_1",
